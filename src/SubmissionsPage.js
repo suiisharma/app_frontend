@@ -36,7 +36,7 @@ function SubmissionsPage() {
       setLoading(true);
 
       try {
-        const response = await axios.get('http://localhost:5000/submissions');
+        const response = await axios.get('https://app-backend-58w2.onrender.com/submissions');
         setSubmissions(response.data.result);
 
         if (response.data.result.length === 0) {
