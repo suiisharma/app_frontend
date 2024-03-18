@@ -1,0 +1,103 @@
+/* SubmissionsPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.submissions-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-head {
+  background-color: #f8f9fa;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.table-header {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+  font-weight: 600;
+  color: #555;
+}
+
+.table-data {
+  padding: 12px 15px;
+  border-bottom: 1px solid #dee2e6;
+  color: #333;
+}
+
+.truncated-text {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.truncated-text:hover {
+  text-decoration: underline;
+}
+
+.output-container {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  color: #495057;
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #f8f9fa;
+}
+
+.pagination-button.active {
+  background-color: #8e44ad;
+  color: #fff;
+  border-color: #8e44ad;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.modal-close-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #8e44ad;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.modal-close-button:hover {
+  background-color: #6c3886;
+}
