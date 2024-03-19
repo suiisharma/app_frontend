@@ -80,13 +80,15 @@ const StyledError = styled.div`
 `;
 
 const languages = [
+  "Python (3.8.1)",
+  "Plain Text",
+  "C++ (GCC 7.4.0)",
   "Assembly (NASM 2.14.02)",
   "Bash (5.0.0)",
   "Basic (FBC 1.07.1)",
   "C (Clang 7.0.1)",
   "C++ (Clang 7.0.1)",
   "C (GCC 7.4.0)",
-  "C++ (GCC 7.4.0)",
   "C (GCC 8.3.0)",
   "C++ (GCC 8.3.0)",
   "C (GCC 9.2.0)",
@@ -119,11 +121,9 @@ const languages = [
   "Pascal (FPC 3.0.4)",
   "Perl (5.28.1)",
   "PHP (7.4.1)",
-  "Plain Text",
   "Prolog (GNU Prolog 1.4.5)",
   "Python (2.7.17)",
   "Python (3.11.2)",
-  "Python (3.8.1)",
   "R (4.0.0)",
   "Ruby (2.7.0)",
   "Rust (1.40.0)",
@@ -151,6 +151,8 @@ function FormPage() {
     }
 
     try {
+      
+      
       const response = await axios.post('https://app-backend-58w2.onrender.com/submit', {
         username,
         language,

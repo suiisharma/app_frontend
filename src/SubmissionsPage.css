@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 .submissions-container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 2rem auto;
   padding: 2rem;
   background-color: #fff;
@@ -14,6 +14,7 @@
 .table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .table-head {
@@ -30,12 +31,29 @@
   border-bottom: 1px solid #dee2e6;
   font-weight: 600;
   color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .table-data {
   padding: 12px 15px;
   border-bottom: 1px solid #dee2e6;
   color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-data:last-child {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+.table-data:last-child:hover {
+  white-space: normal;
+  overflow: visible;
 }
 
 .truncated-text {
